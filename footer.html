@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sestopia Team H</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+
+    var requirement = ["requirement" , "software" ,"elicitation" , "testing"];
+    var engineering = ["engineering" , "software"];
+    var maintenance = ["maintenance" , "software"];
+    var testing = ["test" , "software"];
+
+
+    function display(val) {
+      var found = 0;
+      document.getElementById("skill1").style.display = "none";
+      document.getElementById("skill2").style.display = "none";
+      document.getElementById("skill3").style.display = "none";
+      document.getElementById("skill4").style.display = "none";
+      document.getElementById("skill5").style.display = "none";
+      document.getElementById("skill6").style.display = "none";
+      // document.getElementById("search").style.display = "block";
+
+      // var input = document.getElementById("search").value;
+      var input = val
+      for(var i=0;i<requirement.length;i++){
+
+        var pos = input.search(requirement[i]);
+        if(pos >= 0){
+          document.getElementById("skill1").style.display = "block";
+          found = 1;
+        }
+      }
+
+      for(var i=0;i<engineering.length;i++){
+
+        var pos = input.search(engineering[i]);
+        if(pos >= 0){
+          document.getElementById("skill2").style.display = "block";
+          found = 1;
+        }
+
+      }
+
+      for(var i=0;i<maintenance.length;i++){
+
+        var pos = input.search(maintenance[i]);
+        if(pos >= 0){
+          document.getElementById("skill3").style.display = "block";
+          found = 1;
+        }
+      }
+
+      for(var i=0;i<testing.length;i++){
+
+        var pos = input.search(testing[i]);
+        if(pos >= 0){
+          document.getElementById("skill4").style.display = "block";
+          found = 1;
+        }
+      }
+
+      if(found == 1){
+        document.getElementById("search").style.display = "none";
+      }else{
+        document.getElementById("search").style.display = "block";
+      }
+
+    }
+
+    function clearpage(){
+        document.getElementById("main").style.display = "none"
+        document.getElementById("intro").style.display = "none"
+        document.getElementById("search").style.display = "block"
+    }
+
+    // function  outoffocus(){
+    //     document.getElementById("main").style.display = "block"
+    //     document.getElementById("intro").style.display = "block"
+    //     document.getElementById("skill1").style.display = "none";
+    //     document.getElementById("skill2").style.display = "none";
+    //     document.getElementById("skill3").style.display = "none";
+    //     document.getElementById("skill4").style.display = "none";
+    //     document.getElementById("skill5").style.display = "none";
+    //     document.getElementById("skill6").style.display = "none";
+    //     document.getElementById("search").style.display = "none";
+    //     document.getElementById("search").value = "";
+    // }
+  </script>
+</head>
+
+<body>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="bottom: 0; position: fixed; left: 0; right: 0;">
+     
+   
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SESTOPIA</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Designed by <a href="team.php">SOEN 6011 TEAM H</a>
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+</body>
+</html>

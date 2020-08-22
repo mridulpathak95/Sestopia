@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sestopia Team H</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+<script src="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CMontserrat:300,400,500,700" integrity="sha384-gD+HGh9Eu74KSCznSjS4Sq+tjNfQTUeJy1MDca21zho55TqULZdPNxYMI1ILhDzt" crossorigin="anonymous"></script>  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="/assets/vendor/jquery/jquery.min.js" ></script>
+  <script type="text/javascript" src="search.js"></script>
+  <script>
+
+    var requirement = ["requirement" , "software" ,"elicitation" , "testing"];
+    var engineering = ["engineering" , "software"];
+    var maintenance = ["maintenance" , "software"];
+    var testing = ["test" , "software"];
+
+/*
+    function display(val) {
+      var found = 0;
+      document.getElementById("skill1").style.display = "none";
+      document.getElementById("skill2").style.display = "none";
+      document.getElementById("skill3").style.display = "none";
+      document.getElementById("skill4").style.display = "none";
+      document.getElementById("skill5").style.display = "none";
+      document.getElementById("skill6").style.display = "none";
+      // document.getElementById("search").style.display = "block";
+
+      // var input = document.getElementById("search").value;
+      var input = val
+      for(var i=0;i<requirement.length;i++){
+
+        var pos = input.search(requirement[i]);
+        if(pos >= 0){
+          document.getElementById("skill1").style.display = "block";
+          found = 1;
+        }
+      }
+
+      for(var i=0;i<engineering.length;i++){
+
+        var pos = input.search(engineering[i]);
+        if(pos >= 0){
+          document.getElementById("skill2").style.display = "block";
+          found = 1;
+        }
+
+      }
+
+      for(var i=0;i<maintenance.length;i++){
+
+        var pos = input.search(maintenance[i]);
+        if(pos >= 0){
+          document.getElementById("skill3").style.display = "block";
+          found = 1;
+        }
+      }
+
+      for(var i=0;i<testing.length;i++){
+
+        var pos = input.search(testing[i]);
+        if(pos >= 0){
+          document.getElementById("skill4").style.display = "block";
+          found = 1;
+        }
+      }
+
+      if(found == 1){
+        document.getElementById("search").style.display = "none";
+      }else{
+        document.getElementById("search").style.display = "block";
+      }
+
+    }
+*/
+	
+	
+    function clearpage(){
+        document.getElementById("main").style.display = "none"
+        document.getElementById("intro").style.display = "none"
+        document.getElementById("search").style.display = "block"
+    }
+
+    // function  outoffocus(){
+    //     document.getElementById("main").style.display = "block"
+    //     document.getElementById("intro").style.display = "block"
+    //     document.getElementById("skill1").style.display = "none";
+    //     document.getElementById("skill2").style.display = "none";
+    //     document.getElementById("skill3").style.display = "none";
+    //     document.getElementById("skill4").style.display = "none";
+    //     document.getElementById("skill5").style.display = "none";
+    //     document.getElementById("skill6").style.display = "none";
+    //     document.getElementById("search").style.display = "none";
+    //     document.getElementById("search").value = "";
+    // }
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-topt">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-11 d-flex align-items-center">
+          <h1 class="logo mr-auto"><a href="index.php">SESTOPIA</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          
+
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+             
+				<form action="search.php" method="post">
+				  <div class="search_button">
+					<input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+					
+				  </div>
+				</form>			 
+             
+              
+              <li class="drop-down"><a href="">Skills</a>
+                <ul>
+
+
+                	<li><a href="skills1.php">Creating Low-Fidelity Prototypes</a></li>
+                  <li><a href="skills2.php">Troubleshooting</a></li>
+
+                  <li><a href="skills4.php">Requirement Elicitation</a></li>
+                  <li><a href="skills5.php">Unit Testing</a></li>
+
+
+                  <li><a href="skills6.php">Software Quality Assurance</a></li>
+                  <li><a href="skills7.php">Web Scraping</a></li>
+                 
+                </ul>
+              </li>
+              <li><a href="team.php">Team</a></li>
+               <li><a href="about.php">About Us</a></li>
+
+            </ul>
+			
+			
+
+          </nav><!-- .nav-menu -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  
+ </body>
+</html>

@@ -1,3 +1,7 @@
-# Sestopia
-Website with static backend- providing information on software engineering topics
-Created for the course SOEN-6011
+# SOEN_6011_Team_H
+
+Visit https://sestopia-team-h.netlify.app/ to see the live project.  
+https://gutsiest-pane.000webhostapp.com/index.php  
+
+
+final version for evaluation: https://sestopia-team-h.000webhostapp.com/
